@@ -16,7 +16,7 @@ pipeline {
                 sshPublisher(
                 failOnError: true,
                         continueOnError: false,
-                        publishers: [ -
+                        publishers: [ 
                          sshPublisherDesc(
                                 configName: 'staging',
                                 sshCredentials: [
@@ -33,7 +33,7 @@ pipeline {
                                 ]
                          )
                                 
-                     ] -
+                     ] 
                 )
             }
         }
